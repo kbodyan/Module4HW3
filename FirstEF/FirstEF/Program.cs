@@ -1,14 +1,19 @@
 ﻿using System;
+using System.IO;
 using System.Data;
-using EFCore
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.SqlServer;
+using Microsoft.EntityFrameworkCore.Design;
+using Microsoft.Extensions.Configuration;
 
 namespace FirstEF
 {
-    class Program
+    public class Program
     {
         public static void Main(string[] args)
         {
-            var builder = new C
+            var builder = new ConfigurationBuilder();
+            builder.
         }
     }
 }
