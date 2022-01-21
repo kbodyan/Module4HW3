@@ -13,7 +13,6 @@ namespace FirstEF
         public static void Main(string[] args)
         {
             var builder = new ConfigurationBuilder();
-            builder.
         }
     }
 }
