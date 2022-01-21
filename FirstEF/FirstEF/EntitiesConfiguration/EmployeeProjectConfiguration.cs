@@ -13,9 +13,9 @@ namespace FirstEF.EntitiesConfiguration
             builder.Property(p => p.Rate).IsRequired();
             builder.Property(p => p.StartedDate).IsRequired();
             builder.Property(p => p.EmployeeID).IsRequired();
-            builder.HasOne(p => p.Employee).WithMany(p => p.EmployeeProjects).HasForeignKey(p => p.EmployeeID).OnDelete(DeleteBehavior.NoAction);
+            builder.HasOne(p => p.Employee).WithMany(p => p.EmployeeProjects).HasForeignKey(p => p.EmployeeID).OnDelete(DeleteBehavior.Cascade);
             builder.Property(p => p.ProjectId).IsRequired();
-            builder.HasOne(p => p.Project).WithMany(p => p.EmployeeProjects).HasForeignKey(p => p.ProjectId).OnDelete(DeleteBehavior.NoAction);
+            builder.HasOne(p => p.Project).WithMany(p => p.EmployeeProjects).HasForeignKey(p => p.ProjectId).OnDelete(DeleteBehavior.Cascade);
         }
     }
 }
