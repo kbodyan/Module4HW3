@@ -25,10 +25,5 @@ namespace FirstEF
             modelBuilder.ApplyConfiguration(new ProjectConfiguration());
             modelBuilder.ApplyConfiguration(new EmployeeProjectConfiguration());
         }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(@"Server=.\SQLEXPRESS;Database=usersdb;Trusted_Connection=True");
-        }
     }
 }
