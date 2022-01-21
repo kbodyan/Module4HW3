@@ -1,9 +1,5 @@
 ﻿using System;
-using System.IO;
-using System.Data;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.SqlServer;
-using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
 
 namespace FirstEF
@@ -12,7 +8,14 @@ namespace FirstEF
     {
         public static void Main(string[] args)
         {
-            var builder = new ConfigurationBuilder();
+            var connectionString = new ConfigService().GetConfig().ConnectionString.DefaultConnection;
+            var optionsBuilder = new DbContextOptionsBuilder<ApplicationContext>();
+            var options = optionsBuilder.UseSqlServer(connectionString).Options;
+            using (var db = new ApplicationContext(options))
+            {
+            }
+
+            Console.Read();
         }
     }
 }
