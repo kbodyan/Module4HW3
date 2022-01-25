@@ -9,7 +9,8 @@ namespace FirstEF
         public ApplicationContext(DbContextOptions<ApplicationContext> options)
             : base(options)
         {
-            Database.EnsureCreated();
+            Database.EnsureDeletedAsync();
+            Database.EnsureCreatedAsync();
         }
 
         public DbSet<Employee> Employees { get; set; }

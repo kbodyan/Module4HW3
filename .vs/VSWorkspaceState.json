@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\FirstEF",
+    "\\FirstEF\\FirstEF",
+    "\\FirstEF\\FirstEF\\EntitiesConfiguration"
   ],
-  "SelectedNode": "\\C:\\Users\\kbody\\Source\\Repos\\Module4HW3",
+  "SelectedNode": "\\FirstEF\\FirstEF\\EntitiesConfiguration\\EmployeeProjectConfiguration.cs",
   "PreviewInSolutionExplorer": false
 }
