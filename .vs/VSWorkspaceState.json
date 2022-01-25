@@ -3,8 +3,8 @@
     "",
     "\\FirstEF",
     "\\FirstEF\\FirstEF",
-    "\\FirstEF\\FirstEF\\EntitiesConfiguration"
+    "\\FirstEF\\FirstEF\\Migrations"
   ],
-  "SelectedNode": "\\FirstEF\\FirstEF\\EntitiesConfiguration\\EmployeeProjectConfiguration.cs",
+  "SelectedNode": "\\FirstEF\\FirstEF\\ApplicationContext.cs",
   "PreviewInSolutionExplorer": false
 }
